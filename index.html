@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -17,19 +17,13 @@
   --cream: #f8f3ee;
   --cream-dark: #f0e7df;
   --white: #fffdfb;
-
   --plum: #34242f;
   --plum-soft: #55404c;
-
   --muted: #776b72;
-
   --blush: #d9aebc;
   --blush-soft: #ead2d9;
-
   --mauve: #9a7787;
-
   --border: #e4d9d1;
-
   box-sizing: border-box;
 }
 
@@ -65,22 +59,19 @@ img {
   margin: 0 auto;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+/* Navigation */
 
 nav {
   position: sticky;
   top: 0;
   z-index: 20;
-
-  background: rgba(248, 243, 238, 0.94);
+  background: rgba(248, 243, 238, .94);
   backdrop-filter: blur(12px);
-
   border-bottom: 1px solid var(--border);
 }
 
 .nav-inner {
   min-height: 78px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,7 +82,7 @@ nav {
   font-family: "Playfair Display", serif;
   font-size: 1.25rem;
   font-weight: 500;
-  letter-spacing: -0.02em;
+  letter-spacing: -.02em;
 }
 
 .logo span {
@@ -107,8 +98,8 @@ nav {
 
 .nav-links a {
   color: var(--muted);
-  font-size: 0.88rem;
-  transition: color 0.2s ease;
+  font-size: .88rem;
+  transition: color .2s ease;
 }
 
 .nav-links a:hover {
@@ -119,7 +110,6 @@ nav {
   border: 1px solid var(--plum);
   border-radius: 999px;
   padding: 8px 17px;
-
   color: var(--plum) !important;
 }
 
@@ -128,7 +118,7 @@ nav {
   color: var(--cream) !important;
 }
 
-/* ---------------- GENERAL ---------------- */
+/* General sections */
 
 section {
   padding: 100px 0;
@@ -141,9 +131,9 @@ section {
 
 .section-kicker {
   color: var(--mauve);
-  font-size: 0.78rem;
+  font-size: .78rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: .12em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -153,7 +143,7 @@ section {
   font-size: 2.15rem;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: -.025em;
   margin-bottom: 12px;
 }
 
@@ -162,7 +152,7 @@ section {
   max-width: 65ch;
 }
 
-/* ---------------- HERO ---------------- */
+/* Hero */
 
 .hero {
   padding: 105px 0 95px;
@@ -170,16 +160,16 @@ section {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
+  grid-template-columns: 1.35fr .65fr;
   gap: 80px;
   align-items: center;
 }
 
 .hero-kicker {
   color: var(--mauve);
-  font-size: 0.86rem;
+  font-size: .86rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -189,7 +179,7 @@ section {
   font-size: clamp(3.2rem, 7vw, 5.3rem);
   line-height: 1;
   font-weight: 500;
-  letter-spacing: -0.045em;
+  letter-spacing: -.045em;
   margin-bottom: 28px;
 }
 
@@ -207,7 +197,7 @@ section {
 
 .hero-education {
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: .94rem;
   margin-bottom: 30px;
 }
 
@@ -221,17 +211,11 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   padding: 11px 21px;
   border-radius: 999px;
-
-  font-size: 0.88rem;
+  font-size: .88rem;
   font-weight: 600;
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease,
-    border-color 0.2s ease;
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
 }
 
 .button:hover {
@@ -253,31 +237,25 @@ section {
   border-color: var(--mauve);
 }
 
-/* ---------------- HERO PROFILE CARD ---------------- */
+/* Profile card */
 
 .profile-card {
   position: relative;
-
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 24px;
-
   padding: 30px;
 }
 
 .profile-mark {
   width: 64px;
   height: 64px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: var(--blush-soft);
   color: var(--plum);
-
   font-family: "Playfair Display", serif;
   font-size: 1.35rem;
   margin-bottom: 28px;
@@ -297,25 +275,25 @@ section {
 
 .profile-label {
   color: var(--muted);
-  font-size: 0.74rem;
+  font-size: .74rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   margin-bottom: 4px;
 }
 
 .profile-value {
   color: var(--plum);
-  font-size: 0.93rem;
+  font-size: .93rem;
   font-weight: 600;
 }
 
 .profile-note {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: .82rem;
   margin-top: 3px;
 }
 
-/* ---------------- ABOUT ---------------- */
+/* About */
 
 .about {
   background: var(--white);
@@ -325,7 +303,7 @@ section {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-columns: .7fr 1.3fr;
   gap: 90px;
 }
 
@@ -353,7 +331,7 @@ section {
   font-weight: 600;
 }
 
-/* ---------------- EXPERIENCE ---------------- */
+/* Experience */
 
 .experience-list {
   display: grid;
@@ -383,14 +361,14 @@ section {
 
 .experience-org {
   color: var(--mauve);
-  font-size: 0.92rem;
+  font-size: .92rem;
   font-weight: 600;
   margin-top: 3px;
 }
 
 .experience-date {
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: .82rem;
   white-space: nowrap;
 }
 
@@ -402,9 +380,9 @@ section {
 
 .experience-label {
   color: var(--plum);
-  font-size: 0.78rem;
+  font-size: .78rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
   text-transform: uppercase;
   margin-bottom: 12px;
 }
@@ -420,12 +398,11 @@ section {
   background: var(--cream);
   border-radius: 999px;
   padding: 6px 12px;
-
   color: var(--plum-soft);
-  font-size: 0.79rem;
+  font-size: .79rem;
 }
 
-/* ---------------- PROJECTS ---------------- */
+/* Projects */
 
 .projects {
   background: var(--cream-dark);
@@ -435,7 +412,7 @@ section {
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.875fr 0.875fr;
+  grid-template-columns: 1.25fr .875fr .875fr;
   gap: 18px;
 }
 
@@ -443,9 +420,7 @@ section {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 18px;
-
   padding: 28px;
-
   display: flex;
   flex-direction: column;
   min-height: 285px;
@@ -465,9 +440,9 @@ section {
 
 .project-category {
   color: var(--mauve);
-  font-size: 0.76rem;
+  font-size: .76rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: .08em;
   text-transform: uppercase;
   margin-bottom: 9px;
 }
@@ -482,14 +457,14 @@ section {
 
 .project-description {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: .88rem;
   margin-bottom: 24px;
   flex-grow: 1;
 }
 
 .project-link {
   color: var(--plum);
-  font-size: 0.84rem;
+  font-size: .84rem;
   font-weight: 600;
 }
 
@@ -497,7 +472,7 @@ section {
   color: var(--mauve);
 }
 
-/* ---------------- SKILLS ---------------- */
+/* Skills */
 
 .skills-grid {
   display: grid;
@@ -523,7 +498,7 @@ section {
 
 .skill-card li {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: .88rem;
   padding: 7px 0;
   border-bottom: 1px solid var(--border);
 }
@@ -532,7 +507,7 @@ section {
   border-bottom: none;
 }
 
-/* ---------------- CERTIFICATIONS ---------------- */
+/* Certifications */
 
 .certifications {
   background: var(--white);
@@ -551,26 +526,50 @@ section {
   border: 1px solid var(--border);
   border-radius: 15px;
   padding: 22px;
-  min-height: 125px;
-
+  min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--blush);
 }
 
 .cert-name {
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .cert-provider {
   color: var(--mauve);
-  font-size: 0.76rem;
+  font-size: .76rem;
   margin-top: 12px;
 }
 
-/* ---------------- EDUCATION ---------------- */
+.cert-link {
+  color: var(--plum);
+  font-size: .78rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.cert-link:hover {
+  color: var(--mauve);
+}
+
+.cert-card.no-link {
+  cursor: default;
+}
+
+.cert-card.no-link:hover {
+  transform: none;
+}
+
+/* Education */
 
 .education-card {
   background: var(--white);
@@ -594,14 +593,14 @@ section {
 
 .education-degree {
   color: var(--mauve);
-  font-size: 0.92rem;
+  font-size: .92rem;
   font-weight: 600;
   margin-top: 4px;
 }
 
 .education-status {
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: .83rem;
   text-align: right;
 }
 
@@ -616,17 +615,17 @@ section {
   border-radius: 999px;
   padding: 6px 13px;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: .78rem;
 }
 
-/* ---------------- CONTACT ---------------- */
+/* Contact */
 
 .contact {
   padding: 105px 0;
 }
 
 .contact-inner {
-  max-width: 760px;
+  max-width: 800px;
 }
 
 .contact h2 {
@@ -639,7 +638,8 @@ section {
 
 .contact p {
   color: var(--muted);
-  margin-bottom: 27px;
+  max-width: 700px;
+  margin-bottom: 32px;
 }
 
 .contact-links {
@@ -649,13 +649,31 @@ section {
 }
 
 .contact-link {
-  border-bottom: 1px solid var(--plum);
-  padding-bottom: 3px;
-  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: .86rem;
   font-weight: 600;
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
 }
 
-/* ---------------- FOOTER ---------------- */
+.contact-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--blush);
+  background: #fffaf8;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Footer */
 
 footer {
   border-top: 1px solid var(--border);
@@ -666,19 +684,17 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: .78rem;
 }
 
 .footer-inner a:hover {
   color: var(--plum);
 }
 
-/* ---------------- RESPONSIVE ---------------- */
+/* Responsive */
 
 @media (max-width: 900px) {
-
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 50px;
@@ -711,7 +727,6 @@ footer {
 }
 
 @media (max-width: 680px) {
-
   .wrap {
     width: min(100% - 38px, 1120px);
   }
@@ -767,728 +782,935 @@ footer {
   }
 }
 </style>
+
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- Navigation -->
 
 <nav>
   <div class="wrap nav-inner">
 
-    <a href="#" class="logo">
-      Harriet <span>Kyalo</span>
-    </a>
+```
+<a href="#" class="logo">
+  Harriet <span>Kyalo</span>
+</a>
 
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Credentials</a></li>
-      <li><a href="#education">Education</a></li>
-    </ul>
+<ul class="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#certifications">Credentials</a></li>
+  <li><a href="#education">Education</a></li>
+</ul>
 
-    <!-- Replace # with your CV link -->
-    <a href="#" class="nav-cv">View CV</a>
+<a href="#" class="nav-cv">View CV</a>
+```
 
   </div>
 </nav>
 
-
-<!-- ================= HERO ================= -->
+<!-- Hero -->
 
 <section class="hero">
 
   <div class="wrap hero-grid">
 
-    <div>
+```
+<div>
 
-      <div class="hero-kicker">
-        IT & Technology · Cybersecurity · Systems & Security
-      </div>
+  <div class="hero-kicker">
+    IT & Technology · Cybersecurity · Systems & Security
+  </div>
 
-      <h1>
-        Harriet <span>Kyalo</span>
-      </h1>
+  <h1>
+    Harriet <span>Kyalo</span>
+  </h1>
 
-      <p class="hero-lede">
-        Building practical experience across IT support, systems administration
-        and cybersecurity, with a growing focus on understanding how systems
-        work, how they can be secured, and how to investigate problems when
-        things go wrong.
-      </p>
+  <p class="hero-lede">
+    I bring hands-on experience across IT support, systems administration
+    and cybersecurity, with a practical approach to understanding systems,
+    troubleshooting problems and applying security principles.
+  </p>
 
-      <p class="hero-education">
-        BSc Computer Science coursework completed · Upper Second Class ·
-        Graduating October 2026
-      </p>
+  <p class="hero-education">
+    BSc Computer Science coursework completed · Upper Second Class ·
+    Graduating October 2026
+  </p>
 
-      <div class="hero-buttons">
+  <div class="hero-buttons">
 
-        <a href="#projects" class="button button-primary">
-          Explore My Work
-        </a>
+    <a href="#projects" class="button button-primary">
+      Explore My Work
+    </a>
 
-        <!-- Replace # with your CV link -->
-        <a href="#" class="button button-secondary">
-          View CV
-        </a>
+    <a href="#" class="button button-secondary">
+      View CV
+    </a>
 
-        <a
-          href="https://www.linkedin.com/in/h-kyalo"
-          target="_blank"
-          class="button button-secondary"
-        >
-          LinkedIn
-        </a>
+    <a href="https://www.linkedin.com/in/h-kyalo"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="button button-secondary">
+      LinkedIn
+    </a>
 
-      </div>
+  </div>
 
+</div>
+
+
+<div class="profile-card">
+
+  <div class="profile-mark">
+    HK
+  </div>
+
+  <h2>A little about my direction</h2>
+
+  <div class="profile-item">
+
+    <div class="profile-label">
+      Background
     </div>
 
-
-    <!-- PERSONAL PROFILE CARD -->
-
-    <div class="profile-card">
-
-      <div class="profile-mark">
-        HK
-      </div>
-
-      <h2>
-        A little about my direction
-      </h2>
-
-      <div class="profile-item">
-        <div class="profile-label">Background</div>
-        <div class="profile-value">IT & Systems</div>
-        <div class="profile-note">
-          Hands-on experience through ICT industrial attachments
-        </div>
-      </div>
-
-      <div class="profile-item">
-        <div class="profile-label">Areas I'm building in</div>
-        <div class="profile-value">Cybersecurity & Systems Security</div>
-        <div class="profile-note">
-          Investigation, security fundamentals and practical environments
-        </div>
-      </div>
-
-      <div class="profile-item">
-        <div class="profile-label">Approach</div>
-        <div class="profile-value">Practical & Analytical</div>
-        <div class="profile-note">
-          Understand the system first, then troubleshoot or secure it
-        </div>
-      </div>
-
+    <div class="profile-value">
+      IT & Systems
     </div>
+
+    <div class="profile-note">
+      Hands-on experience through ICT industrial attachments
+    </div>
+
+  </div>
+
+
+  <div class="profile-item">
+
+    <div class="profile-label">
+      Areas I'm building in
+    </div>
+
+    <div class="profile-value">
+      Cybersecurity & Systems Security
+    </div>
+
+    <div class="profile-note">
+      Investigation, security fundamentals and practical environments
+    </div>
+
+  </div>
+
+
+  <div class="profile-item">
+
+    <div class="profile-label">
+      Approach
+    </div>
+
+    <div class="profile-value">
+      Practical & Analytical
+    </div>
+
+    <div class="profile-note">
+      Understand the system first, then troubleshoot or secure it
+    </div>
+
+  </div>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= ABOUT ================= -->
+<!-- About -->
 
 <section id="about" class="about">
 
   <div class="wrap about-grid">
 
-    <div>
-      <div class="section-kicker">About Me</div>
+```
+<div>
 
-      <div class="about-label">
-        Technology, systems & security.
-      </div>
-    </div>
+  <div class="section-kicker">
+    About Me
+  </div>
 
-    <div class="about-text">
+  <div class="about-label">
+    Technology, systems & security.
+  </div>
 
-      <p>
-        I'm a <strong>BSc Computer Science student with coursework completed</strong>,
-        awaiting graduation in October 2026. My practical experience has grown
-        through ICT industrial attachments where I worked with users, systems,
-        infrastructure and day-to-day technology operations.
-      </p>
+</div>
 
-      <p>
-        I've had hands-on exposure to
-        <strong>IT support, systems administration, Active Directory,
-        Windows Server, VMware, networking and security controls</strong>.
-        These experiences have helped me understand that good technology work
-        is not only about making something work, but also about making it
-        reliable, manageable and secure.
-      </p>
 
-      <p>
-        I'm continuing to build on that foundation through cybersecurity
-        projects and practical investigations. I enjoy work that involves
-        understanding a problem, working through the evidence and finding a
-        structured way forward — whether the issue is technical, operational
-        or security-related.
-      </p>
+<div class="about-text">
 
-    </div>
+  <p>
+    I'm a <strong>BSc Computer Science student with coursework completed</strong>,
+    awaiting graduation in October 2026. My practical experience has grown
+    through ICT industrial attachments where I worked with users, systems,
+    infrastructure and day-to-day technology operations.
+  </p>
+
+  <p>
+    I've had hands-on exposure to
+    <strong>IT support, systems administration, Active Directory,
+    Windows Server, VMware, networking and security controls</strong>.
+    These experiences have helped me understand that good technology work
+    is not only about making something work, but also about making it
+    reliable, manageable and secure.
+  </p>
+
+  <p>
+    I'm continuing to strengthen that foundation through cybersecurity
+    projects and professional learning. I enjoy work that involves
+    understanding a problem, working through the evidence and finding a
+    structured way forward — whether the issue is technical, operational
+    or security-related.
+  </p>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= EXPERIENCE ================= -->
+<!-- Experience -->
 
 <section id="experience">
 
   <div class="wrap">
 
-    <div class="section-heading">
-      <div class="section-kicker">Experience</div>
+```
+<div class="section-heading">
 
-      <h2 class="section-title">
-        Practical experience beyond the classroom.
-      </h2>
+  <div class="section-kicker">
+    Experience
+  </div>
 
-      <p class="section-intro">
-        Two ICT industrial attachments gave me exposure to real users,
-        systems, infrastructure and technology operations in different
-        organisational environments.
-      </p>
+  <h2 class="section-title">
+    Practical experience beyond the classroom.
+  </h2>
+
+  <p class="section-intro">
+    Two ICT industrial attachments gave me exposure to real users,
+    systems, infrastructure and technology operations in different
+    organisational environments.
+  </p>
+
+</div>
+
+
+<div class="experience-list">
+
+
+  <!-- CLE -->
+
+  <article class="experience-card">
+
+    <div class="experience-top">
+
+      <div>
+
+        <div class="experience-role">
+          ICT Industrial Attachment
+        </div>
+
+        <div class="experience-org">
+          Council of Legal Education
+        </div>
+
+      </div>
+
+      <div class="experience-date">
+        May – July 2025
+      </div>
+
     </div>
 
 
-    <div class="experience-list">
-
-      <!-- CLE -->
-
-      <article class="experience-card">
-
-        <div class="experience-top">
-
-          <div>
-            <div class="experience-role">
-              ICT Industrial Attachment
-            </div>
-
-            <div class="experience-org">
-              Council of Legal Education
-            </div>
-          </div>
-
-          <div class="experience-date">
-            May – July 2025
-          </div>
-
-        </div>
-
-        <p class="experience-description">
-          Worked across IT support, systems administration and infrastructure
-          environments, gaining practical exposure to Windows Server,
-          Active Directory, virtualisation, networking and security-related
-          configurations.
-        </p>
-
-        <div class="experience-label">
-          Areas of work
-        </div>
-
-        <div class="experience-tags">
-          <span class="tag">IT Support</span>
-          <span class="tag">Active Directory</span>
-          <span class="tag">Windows Server</span>
-          <span class="tag">Group Policy</span>
-          <span class="tag">VMware</span>
-          <span class="tag">pfSense</span>
-          <span class="tag">VLANs</span>
-          <span class="tag">DNS</span>
-          <span class="tag">RADIUS / NPS</span>
-          <span class="tag">DSpace</span>
-          <span class="tag">Security Event Logging</span>
-        </div>
-
-      </article>
+    <p class="experience-description">
+      Worked across IT support, systems administration and infrastructure
+      environments, gaining practical exposure to Windows Server,
+      Active Directory, virtualisation, networking and security-related
+      configurations.
+    </p>
 
 
-      <!-- KNBS -->
+    <div class="experience-label">
+      Areas of work
+    </div>
 
-      <article class="experience-card">
+    <div class="experience-tags">
 
-        <div class="experience-top">
-
-          <div>
-            <div class="experience-role">
-              ICT Industrial Attachment
-            </div>
-
-            <div class="experience-org">
-              Kenya National Bureau of Statistics
-            </div>
-          </div>
-
-          <div class="experience-date">
-            July – September 2024
-          </div>
-
-        </div>
-
-        <p class="experience-description">
-          Supported day-to-day ICT operations across a large technology
-          environment, assisting users, troubleshooting systems, supporting
-          upgrades and working with data and survey-related technology
-          activities.
-        </p>
-
-        <div class="experience-label">
-          Areas of work
-        </div>
-
-        <div class="experience-tags">
-          <span class="tag">IT Support</span>
-          <span class="tag">Troubleshooting</span>
-          <span class="tag">System Upgrades</span>
-          <span class="tag">User Onboarding</span>
-          <span class="tag">User Training</span>
-          <span class="tag">50+ Systems</span>
-          <span class="tag">Data Handling</span>
-          <span class="tag">MSIP Survey</span>
-        </div>
-
-      </article>
+      <span class="tag">IT Support</span>
+      <span class="tag">Active Directory</span>
+      <span class="tag">Windows Server</span>
+      <span class="tag">Group Policy</span>
+      <span class="tag">VMware</span>
+      <span class="tag">pfSense</span>
+      <span class="tag">VLANs</span>
+      <span class="tag">DNS</span>
+      <span class="tag">RADIUS / NPS</span>
+      <span class="tag">DSpace</span>
+      <span class="tag">Security Event Logging</span>
 
     </div>
+
+  </article>
+
+
+  <!-- KNBS -->
+
+  <article class="experience-card">
+
+    <div class="experience-top">
+
+      <div>
+
+        <div class="experience-role">
+          ICT Industrial Attachment
+        </div>
+
+        <div class="experience-org">
+          Kenya National Bureau of Statistics
+        </div>
+
+      </div>
+
+      <div class="experience-date">
+        July – September 2024
+      </div>
+
+    </div>
+
+
+    <p class="experience-description">
+      Supported day-to-day ICT operations across a large technology
+      environment, assisting users, troubleshooting systems, supporting
+      upgrades and working with data and survey-related technology
+      activities.
+    </p>
+
+
+    <div class="experience-label">
+      Areas of work
+    </div>
+
+    <div class="experience-tags">
+
+      <span class="tag">IT Support</span>
+      <span class="tag">Troubleshooting</span>
+      <span class="tag">System Upgrades</span>
+      <span class="tag">User Onboarding</span>
+      <span class="tag">User Training</span>
+      <span class="tag">50+ Systems</span>
+      <span class="tag">Data Handling</span>
+      <span class="tag">MSIP Survey</span>
+
+    </div>
+
+  </article>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= PROJECTS ================= -->
+<!-- Projects -->
 
 <section id="projects" class="projects">
 
   <div class="wrap">
 
-    <div class="section-heading">
-      <div class="section-kicker">Selected Work</div>
+```
+<div class="section-heading">
 
-      <h2 class="section-title">
-        Turning what I've learned into practical work.
-      </h2>
+  <div class="section-kicker">
+    Selected Work
+  </div>
 
-      <p class="section-intro">
-        A mix of documented investigation work and practical systems,
-        networking and security environments from my academic and hands-on
-        experience.
-      </p>
+  <h2 class="section-title">
+    Practical work, investigations & systems experience.
+  </h2>
+
+  <p class="section-intro">
+    A mix of documented investigation work and practical systems,
+    networking and security environments from my academic and hands-on
+    experience.
+  </p>
+
+</div>
+
+
+<div class="project-grid">
+
+
+  <!-- Project 01 -->
+
+  <article class="project-card featured">
+
+    <div class="project-number">
+      01
     </div>
 
-
-    <div class="project-grid">
-
-
-      <!-- FEATURED PROJECT -->
-
-      <article class="project-card featured">
-
-        <div class="project-number">01</div>
-
-        <div class="project-category">
-          Cybersecurity · Email Security · Threat Intelligence
-        </div>
-
-        <h3 class="project-title">
-          Phishing Email Investigation & Incident Triage
-        </h3>
-
-        <p class="project-description">
-          An end-to-end investigation of a simulated phishing email,
-          covering email header analysis, indicator extraction, domain and
-          authentication checks, URL investigation and incident triage.
-          The investigation is documented with supporting evidence and
-          published on GitHub.
-        </p>
-
-        <a
-          href="https://github.com/HKyalo/Phishing-Email-Investigation"
-          target="_blank"
-          class="project-link"
-        >
-          View Investigation →
-        </a>
-
-      </article>
-
-
-      <!-- SYSTEMS PROJECT -->
-
-      <article class="project-card">
-
-        <div class="project-number">02</div>
-
-        <div class="project-category">
-          Systems Administration
-        </div>
-
-        <h3 class="project-title">
-          Active Directory & Windows Server Environment
-        </h3>
-
-        <p class="project-description">
-          Practical systems administration work involving user provisioning,
-          domain joining, Windows Server, Active Directory, Group Policy and
-          security-related system configurations.
-        </p>
-
-        <a
-          href="https://github.com/HKyalo"
-          target="_blank"
-          class="project-link"
-        >
-          View on GitHub →
-        </a>
-
-      </article>
-
-
-      <!-- NETWORK SECURITY PROJECT -->
-
-      <article class="project-card">
-
-        <div class="project-number">03</div>
-
-        <div class="project-category">
-          Network & Security
-        </div>
-
-        <h3 class="project-title">
-          Network Segmentation & Firewall Configuration
-        </h3>
-
-        <p class="project-description">
-          Practical work involving pfSense, VLAN segmentation, VMware,
-          network access controls, RADIUS/NPS and infrastructure
-          configuration and troubleshooting.
-        </p>
-
-        <a
-          href="https://github.com/HKyalo"
-          target="_blank"
-          class="project-link"
-        >
-          View on GitHub →
-        </a>
-
-      </article>
-
+    <div class="project-category">
+      Cybersecurity · Email Security · Threat Intelligence
     </div>
+
+    <h3 class="project-title">
+      Phishing Email Investigation & Incident Triage
+    </h3>
+
+    <p class="project-description">
+      An end-to-end investigation of a simulated phishing email,
+      covering email header analysis, indicator extraction, domain and
+      authentication checks, URL investigation and incident triage.
+      The investigation is documented with supporting evidence and
+      published on GitHub.
+    </p>
+
+    <a href="https://github.com/HKyalo/Phishing-Email-Investigation"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="project-link">
+      View Investigation →
+    </a>
+
+  </article>
+
+
+  <!-- Project 02 -->
+
+  <article class="project-card">
+
+    <div class="project-number">
+      02
+    </div>
+
+    <div class="project-category">
+      Systems Administration
+    </div>
+
+    <h3 class="project-title">
+      Active Directory & Windows Server Environment
+    </h3>
+
+    <p class="project-description">
+      Hands-on systems administration experience involving user
+      provisioning, domain joining, Windows Server, Active Directory,
+      Group Policy and security-related system configurations.
+    </p>
+
+    <div class="project-link">
+      Part of my ICT attachment experience
+    </div>
+
+  </article>
+
+
+  <!-- Project 03 -->
+
+  <article class="project-card">
+
+    <div class="project-number">
+      03
+    </div>
+
+    <div class="project-category">
+      Network & Security
+    </div>
+
+    <h3 class="project-title">
+      Network Segmentation & Firewall Configuration
+    </h3>
+
+    <p class="project-description">
+      Hands-on experience with pfSense, VLAN segmentation, VMware,
+      network access controls, RADIUS/NPS and infrastructure
+      configuration and troubleshooting.
+    </p>
+
+    <div class="project-link">
+      Part of my ICT attachment experience
+    </div>
+
+  </article>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= SKILLS ================= -->
+<!-- Skills -->
 
 <section id="skills">
 
   <div class="wrap">
 
-    <div class="section-heading">
-      <div class="section-kicker">Skills</div>
+```
+<div class="section-heading">
 
-      <h2 class="section-title">
-        What I bring to the table.
-      </h2>
-    </div>
+  <div class="section-kicker">
+    Skills
+  </div>
 
+  <h2 class="section-title">
+    What I bring to the table.
+  </h2>
 
-    <div class="skills-grid">
-
-      <div class="skill-card">
-
-        <h3>IT & Support</h3>
-
-        <ul>
-          <li>End-user support</li>
-          <li>Hardware & software troubleshooting</li>
-          <li>Windows troubleshooting</li>
-          <li>User onboarding</li>
-          <li>Technical issue resolution</li>
-        </ul>
-
-      </div>
+</div>
 
 
-      <div class="skill-card">
-
-        <h3>Systems</h3>
-
-        <ul>
-          <li>Windows 10 / 11</li>
-          <li>Windows Server</li>
-          <li>Active Directory</li>
-          <li>Group Policy</li>
-          <li>VMware</li>
-          <li>DSpace</li>
-        </ul>
-
-      </div>
+<div class="skills-grid">
 
 
-      <div class="skill-card">
+  <div class="skill-card">
 
-        <h3>Security & Infrastructure</h3>
+    <h3>
+      IT & Support
+    </h3>
 
-        <ul>
-          <li>Cybersecurity fundamentals</li>
-          <li>Phishing investigation</li>
-          <li>TCP/IP</li>
-          <li>VLANs</li>
-          <li>pfSense</li>
-          <li>RADIUS / NPS</li>
-          <li>Security event monitoring</li>
-        </ul>
+    <ul>
+      <li>End-user support</li>
+      <li>Hardware & software troubleshooting</li>
+      <li>Windows troubleshooting</li>
+      <li>User onboarding</li>
+      <li>Technical issue resolution</li>
+    </ul>
 
-      </div>
+  </div>
 
-    </div>
+
+  <div class="skill-card">
+
+    <h3>
+      Systems
+    </h3>
+
+    <ul>
+      <li>Windows 10 / 11</li>
+      <li>Windows Server</li>
+      <li>Active Directory</li>
+      <li>Group Policy</li>
+      <li>VMware</li>
+      <li>DSpace</li>
+    </ul>
+
+  </div>
+
+
+  <div class="skill-card">
+
+    <h3>
+      Security & Infrastructure
+    </h3>
+
+    <ul>
+      <li>Cybersecurity fundamentals</li>
+      <li>Phishing investigation</li>
+      <li>TCP/IP</li>
+      <li>VLANs</li>
+      <li>pfSense</li>
+      <li>RADIUS / NPS</li>
+      <li>Security event monitoring</li>
+    </ul>
+
+  </div>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= CERTIFICATIONS ================= -->
+<!-- Credentials -->
 
 <section id="certifications" class="certifications">
 
   <div class="wrap">
 
-    <div class="section-heading">
-      <div class="section-kicker">Credentials</div>
+```
+<div class="section-heading">
 
-      <h2 class="section-title">
-        Certifications & professional learning.
-      </h2>
+  <div class="section-kicker">
+    Credentials
+  </div>
 
-      <p class="section-intro">
-        A growing foundation across cybersecurity, technology and
-        professional skills.
-      </p>
+  <h2 class="section-title">
+    Certifications & professional learning.
+  </h2>
+
+  <p class="section-intro">
+    A growing foundation across cybersecurity, technology and
+    professional skills.
+  </p>
+
+</div>
+
+
+<div class="cert-grid">
+
+
+  <!-- ISC2 -->
+
+  <a href="https://www.credly.com/badges/f523ff37-d75a-4eda-b3d9-aff2ab7c4e12/public_url"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cert-card">
+
+    <div>
+      <div class="cert-name">
+        (ISC)² Certified in Cybersecurity (CC)
+      </div>
+
+      <div class="cert-provider">
+        (ISC)²
+      </div>
     </div>
 
-
-    <div class="cert-grid">
-
-      <div class="cert-card">
-        <div class="cert-name">
-          (ISC)² Certified in Cybersecurity (CC)
-        </div>
-
-        <div class="cert-provider">
-          (ISC)²
-        </div>
-      </div>
-
-
-      <div class="cert-card">
-        <div class="cert-name">
-          Cisco Cybersecurity Defense Analyst
-        </div>
-
-        <div class="cert-provider">
-          Cisco Networking Academy
-        </div>
-      </div>
-
-
-      <div class="cert-card">
-        <div class="cert-name">
-          Cybersecurity Fundamentals
-        </div>
-
-        <div class="cert-provider">
-          IBM SkillsBuild
-        </div>
-      </div>
-
-
-      <div class="cert-card">
-        <div class="cert-name">
-          Microsoft AI Skills Fest
-        </div>
-
-        <div class="cert-provider">
-          Microsoft
-        </div>
-      </div>
-
-
-      <div class="cert-card">
-        <div class="cert-name">
-          Working in a Digital World
-        </div>
-
-        <div class="cert-provider">
-          IBM
-        </div>
-      </div>
-
-
-      <div class="cert-card">
-        <div class="cert-name">
-          Cybersecurity, Cloud, AI & Data Science
-        </div>
-
-        <div class="cert-provider">
-          AFRALTI
-        </div>
-      </div>
-
+    <div class="cert-link">
+      Verify credential →
     </div>
+
+  </a>
+
+
+  <!-- Cisco -->
+
+  <a href="https://www.credly.com/badges/1187e45f-9e70-4cea-bacd-905f953a3500/public_url"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cert-card">
+
+    <div>
+      <div class="cert-name">
+        Cybersecurity Defense Analyst Career Path
+      </div>
+
+      <div class="cert-provider">
+        Cisco Networking Academy
+      </div>
+    </div>
+
+    <div class="cert-link">
+      Verify credential →
+    </div>
+
+  </a>
+
+
+  <!-- IBM Cybersecurity -->
+
+  <a href="https://www.credly.com/badges/95260ee9-1aac-4a78-a91f-6d2f891f95b2/public_url"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cert-card">
+
+    <div>
+      <div class="cert-name">
+        Cybersecurity Fundamentals
+      </div>
+
+      <div class="cert-provider">
+        IBM SkillsBuild
+      </div>
+    </div>
+
+    <div class="cert-link">
+      Verify credential →
+    </div>
+
+  </a>
+
+
+  <!-- Microsoft -->
+
+  <a href="https://www.credly.com/badges/c447c54d-290c-442a-814e-58d260d028f4/public_url"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cert-card">
+
+    <div>
+      <div class="cert-name">
+        Microsoft AI Skills Fest
+      </div>
+
+      <div class="cert-provider">
+        Microsoft
+      </div>
+    </div>
+
+    <div class="cert-link">
+      Verify credential →
+    </div>
+
+  </a>
+
+
+  <!-- IBM Digital World -->
+
+  <a href="https://www.credly.com/badges/cd3f279b-f05c-47a0-a994-99a6762425d1/public_url"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="cert-card">
+
+    <div>
+      <div class="cert-name">
+        Working in a Digital World
+      </div>
+
+      <div class="cert-provider">
+        IBM
+      </div>
+    </div>
+
+    <div class="cert-link">
+      Verify credential →
+    </div>
+
+  </a>
+
+
+  <!-- AFRALTI -->
+
+  <div class="cert-card no-link">
+
+    <div>
+      <div class="cert-name">
+        IBM SkillsBuild for Students Kenya Program
+      </div>
+
+      <div class="cert-provider">
+        AFRALTI in partnership with CUEA · Aug–Sept 2023
+      </div>
+
+      <div class="cert-provider">
+        Basics in Cyber Security, Blockchain, Data Science,
+        Cloud Computing, Artificial Intelligence & Professional Skills
+      </div>
+    </div>
+
+  </div>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= EDUCATION ================= -->
+<!-- Education -->
 
 <section id="education">
 
   <div class="wrap">
 
-    <div class="section-heading">
-      <div class="section-kicker">Education</div>
+```
+<div class="section-heading">
 
-      <h2 class="section-title">
-        Academic foundation.
-      </h2>
-    </div>
+  <div class="section-kicker">
+    Education
+  </div>
+
+  <h2 class="section-title">
+    Academic foundation.
+  </h2>
+
+</div>
 
 
-    <div class="education-card">
+<div class="education-card">
 
-      <div class="education-top">
+  <div class="education-top">
 
-        <div>
+    <div>
 
-          <div class="education-school">
-            The Catholic University of Eastern Africa
-          </div>
-
-          <div class="education-degree">
-            BSc Computer Science
-          </div>
-
-        </div>
-
-        <div class="education-status">
-          Upper Second Class<br>
-          Coursework Completed<br>
-          Graduation October 2026
-        </div>
-
+      <div class="education-school">
+        The Catholic University of Eastern Africa
       </div>
 
-
-      <div class="course-list">
-
-        <span class="course">
-          Information Security Fundamentals
-        </span>
-
-        <span class="course">
-          Ethical Hacking
-        </span>
-
-        <span class="course">
-          Computer Networks & Network Security
-        </span>
-
-        <span class="course">
-          IT Governance & Compliance
-        </span>
-
-        <span class="course">
-          Cybersecurity Incident Response
-        </span>
-
+      <div class="education-degree">
+        BSc Computer Science
       </div>
 
     </div>
+
+
+    <div class="education-status">
+      Upper Second Class<br>
+      Coursework Completed<br>
+      Graduation October 2026
+    </div>
+
+  </div>
+
+
+  <div class="course-list">
+
+    <span class="course">
+      Information Security Fundamentals
+    </span>
+
+    <span class="course">
+      Ethical Hacking
+    </span>
+
+    <span class="course">
+      Computer Networks & Network Security
+    </span>
+
+    <span class="course">
+      IT Governance & Compliance
+    </span>
+
+    <span class="course">
+      Cybersecurity Incident Response
+    </span>
+
+  </div>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= CONTACT ================= -->
+<!-- Contact -->
 
 <section class="contact">
 
   <div class="wrap">
 
-    <div class="contact-inner">
+```
+<div class="contact-inner">
 
-      <div class="section-kicker">
-        Connect
-      </div>
+  <div class="section-kicker">
+    Connect
+  </div>
 
-      <h2>
-        Interested in what I'm building?
-      </h2>
+  <h2>
+    Let's connect.
+  </h2>
 
-      <p>
-        I'm currently exploring opportunities where I can continue building
-        practical experience across IT, systems and cybersecurity.
-      </p>
+  <p>
+    I bring practical experience across IT support, systems administration
+    and cybersecurity, together with a structured, analytical approach to
+    solving technical and operational problems. I'm continuing to
+    strengthen my skills through hands-on projects and professional
+    learning, while looking for opportunities where I can contribute,
+    take responsibility and grow within a technology-focused team.
+  </p>
 
-      <div class="contact-links">
 
-        <a
-          href="https://www.linkedin.com/in/h-kyalo"
-          target="_blank"
-          class="contact-link"
-        >
-          LinkedIn
-        </a>
+  <div class="contact-links">
 
-        <a
-          href="https://github.com/HKyalo"
-          target="_blank"
-          class="contact-link"
-        >
-          GitHub
-        </a>
 
-      </div>
+    <!-- LinkedIn -->
 
-    </div>
+    <a href="https://www.linkedin.com/in/h-kyalo"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-link"
+       aria-label="LinkedIn">
+
+      <svg class="contact-icon"
+           viewBox="0 0 24 24"
+           fill="currentColor"
+           aria-hidden="true">
+
+        <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.68H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.32 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.54 20.45H7.1V9H3.54v11.45z"/>
+      
+      </svg>
+
+      LinkedIn
+
+    </a>
+
+
+    <!-- Email -->
+
+    <a href="mailto:harrietkyalo22@gmail.com"
+       class="contact-link"
+       aria-label="Email Harriet Kyalo">
+
+      <svg class="contact-icon"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="1.8"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           aria-hidden="true">
+
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <polyline points="3,7 12,13 21,7"></polyline>
+
+      </svg>
+
+      Email
+
+    </a>
+
+
+    <!-- GitHub -->
+
+    <a href="https://github.com/HKyalo"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-link"
+       aria-label="GitHub">
+
+      <svg class="contact-icon"
+           viewBox="0 0 24 24"
+           fill="currentColor"
+           aria-hidden="true">
+
+        <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.33-1.77-1.33-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.28c0 .32.22.69.83.57A12 12 0 0 0 12 .5z"/>
+
+      </svg>
+
+      GitHub
+
+    </a>
+
+  </div>
+
+</div>
+```
 
   </div>
 
 </section>
 
-
-<!-- ================= FOOTER ================= -->
+<!-- Footer -->
 
 <footer>
 
   <div class="wrap footer-inner">
 
-    <div>
-      Harriet Kyalo · Nairobi, Kenya
-    </div>
+```
+<div>
+  Harriet Kyalo · Nairobi, Kenya
+</div>
 
-    <a
-      href="https://github.com/HKyalo"
-      target="_blank"
-    >
-      github.com/HKyalo
-    </a>
+<a href="https://github.com/HKyalo"
+   target="_blank"
+   rel="noopener noreferrer">
+  github.com/HKyalo
+</a>
+```
 
   </div>
 
@@ -1496,4 +1718,3 @@ footer {
 
 </body>
 </html>
-```
