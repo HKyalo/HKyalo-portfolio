@@ -7,35 +7,21 @@
 
   <title>Harriet Kyalo | IT & Cybersecurity</title>
 
-<meta
-name="description"
-content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Security."
-
->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --cream: #f8f3ee;
       --cream-dark: #f0e7df;
       --white: #fffdfb;
-
       --plum: #34242f;
       --plum-soft: #55404c;
-
       --muted: #776b72;
-
       --blush: #d9aebc;
       --blush-soft: #ead2d9;
       --mauve: #9a7787;
-
       --border: #e4d9d1;
     }
 
@@ -50,9 +36,9 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
     }
 
     body {
+      font-family: "DM Sans", sans-serif;
       background: var(--cream);
       color: var(--plum);
-      font-family: "DM Sans", sans-serif;
       line-height: 1.7;
     }
 
@@ -61,24 +47,17 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
       text-decoration: none;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     .wrap {
-      width: min(1120px, calc(100% - 48px));
+      width: min(1120px, 90%);
       margin: 0 auto;
     }
-
-    /* ---------------- NAVIGATION ---------------- */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(248, 243, 238, 0.94);
-      backdrop-filter: blur(12px);
+      background: rgba(248, 243, 238, 0.95);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
     }
 
@@ -87,16 +66,18 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 32px;
+      gap: 30px;
     }
 
     .logo {
       font-family: "Playfair Display", serif;
       font-size: 1.35rem;
+      font-weight: 600;
       white-space: nowrap;
     }
 
-    .logo span {
+    .logo span,
+    h1 span {
       color: var(--mauve);
     }
 
@@ -109,21 +90,17 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
       color: var(--plum-soft);
     }
 
-    .nav-links a {
-      transition: color 0.2s ease;
-    }
-
     .nav-links a:hover {
       color: var(--mauve);
     }
 
     .nav-cv {
-      padding: 9px 17px;
       border: 1px solid var(--plum);
-      border-radius: 999px;
-      font-size: 0.84rem;
+      padding: 9px 18px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
       white-space: nowrap;
-      transition: all 0.2s ease;
     }
 
     .nav-cv:hover {
@@ -131,106 +108,88 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
       color: var(--white);
     }
 
-    /* ---------------- HERO ---------------- */
-
     .hero {
-      padding: 95px 0 90px;
+      padding: 105px 0 95px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
-      gap: 55px;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 80px;
       align-items: center;
     }
 
     .hero-kicker {
-      color: var(--mauve);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.13em;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.72rem;
+      color: var(--mauve);
+      font-weight: 700;
       margin-bottom: 20px;
     }
 
     h1 {
       font-family: "Playfair Display", serif;
-      font-size: clamp(3.5rem, 7vw, 6.2rem);
-      line-height: 0.98;
+      font-size: clamp(3.4rem, 7vw, 6rem);
+      line-height: 1;
       font-weight: 500;
-      letter-spacing: -0.04em;
-      margin-bottom: 30px;
-    }
-
-    h1 span {
-      color: var(--mauve);
+      margin-bottom: 28px;
     }
 
     .hero-lede {
-      max-width: 690px;
-      font-size: 1.12rem;
+      max-width: 680px;
       color: var(--plum-soft);
-      line-height: 1.8;
+      font-size: 1.08rem;
+      line-height: 1.85;
       margin-bottom: 18px;
     }
 
     .hero-education {
       color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 32px;
+      font-size: 0.88rem;
+      margin-bottom: 34px;
     }
 
-    .hero-actions {
+    .hero-buttons {
       display: flex;
+      gap: 14px;
       flex-wrap: wrap;
-      gap: 12px;
     }
 
     .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 45px;
-      padding: 0 20px;
-      border-radius: 999px;
-      font-size: 0.88rem;
-      font-weight: 600;
+      display: inline-block;
+      padding: 12px 22px;
       border: 1px solid var(--plum);
-      transition: all 0.2s ease;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: 0.2s ease;
     }
 
-    .button-primary {
+    .button.primary {
       background: var(--plum);
       color: var(--white);
     }
 
-    .button-primary:hover {
+    .button.primary:hover {
       background: var(--plum-soft);
     }
 
-    .button-secondary {
-      color: var(--plum);
-    }
-
-    .button-secondary:hover {
+    .button.secondary:hover {
       background: var(--white);
     }
-
-    /* ---------------- PROFILE CARD ---------------- */
 
     .profile-card {
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 30px;
-      border-radius: 4px;
-      box-shadow: 0 16px 45px rgba(52, 36, 47, 0.06);
+      padding: 34px;
+      box-shadow: 0 20px 50px rgba(52, 36, 47, 0.06);
     }
 
-    .profile-card h2 {
+    .profile-card h3 {
       font-family: "Playfair Display", serif;
-      font-size: 1.55rem;
-      font-weight: 500;
-      margin-bottom: 25px;
+      font-size: 1.45rem;
+      margin-bottom: 26px;
     }
 
     .profile-item {
@@ -238,474 +197,394 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
       border-top: 1px solid var(--border);
     }
 
-    .profile-item:first-of-type {
-      border-top: none;
-      padding-top: 0;
-    }
-
-    .profile-label {
-      color: var(--mauve);
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      font-weight: 700;
-      margin-bottom: 5px;
-    }
-
-    .profile-text {
-      color: var(--plum-soft);
-      font-size: 0.9rem;
-    }
-
-    /* ---------------- GENERAL SECTIONS ---------------- */
-
-    section {
-      padding: 90px 0;
-    }
-
-    .section-heading {
-      margin-bottom: 48px;
-    }
-
-    .section-number {
-      color: var(--mauve);
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.13em;
-      margin-bottom: 8px;
-    }
-
-    .section-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.2rem, 4vw, 3.4rem);
-      line-height: 1.1;
-      font-weight: 500;
-    }
-
-    .section-intro {
-      max-width: 680px;
-      color: var(--muted);
-      margin-top: 14px;
-    }
-
-    /* ---------------- ABOUT ---------------- */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.75fr 1.25fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .about-label {
-      color: var(--mauve);
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-weight: 700;
-    }
-
-    .about-content p {
-      color: var(--plum-soft);
-      margin-bottom: 18px;
-    }
-
-    .about-content p:last-child {
-      margin-bottom: 0;
-    }
-
-    /* ---------------- EXPERIENCE ---------------- */
-
-    .experience-list {
-      border-top: 1px solid var(--border);
-    }
-
-    .experience-item {
-      display: grid;
-      grid-template-columns: 190px 1fr;
-      gap: 45px;
-      padding: 34px 0;
+    .profile-item:last-child {
       border-bottom: 1px solid var(--border);
     }
 
-    .experience-date {
-      color: var(--mauve);
-      font-size: 0.82rem;
-      font-weight: 600;
-    }
-
-    .experience-role {
-      font-size: 1.05rem;
+    .profile-label {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.68rem;
       font-weight: 700;
-      margin-bottom: 3px;
+      color: var(--mauve);
+      margin-bottom: 5px;
     }
 
-    .experience-org {
-      color: var(--muted);
+    .profile-value {
+      color: var(--plum-soft);
       font-size: 0.9rem;
-      margin-bottom: 14px;
     }
 
-    .experience-description {
+    section {
+      padding: 95px 0;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--white);
+    }
+
+    .section-heading {
+      margin-bottom: 50px;
+    }
+
+    .section-number {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      color: var(--mauve);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+    }
+
+    .about-intro {
+      font-family: "Playfair Display", serif;
+      font-size: 1.55rem;
+      line-height: 1.55;
+    }
+
+    .about-text {
+      color: var(--plum-soft);
+      font-size: 0.96rem;
+    }
+
+    .about-text p + p {
+      margin-top: 18px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .experience-item {
+      background: var(--white);
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 45px;
+    }
+
+    .experience-date {
+      font-size: 0.78rem;
+      color: var(--mauve);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .experience-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+    }
+
+    .experience-company {
+      color: var(--mauve);
+      font-size: 0.88rem;
+      margin-bottom: 15px;
+    }
+
+    .experience-content p {
       color: var(--plum-soft);
       font-size: 0.92rem;
-      max-width: 760px;
+      margin-bottom: 12px;
     }
 
-    /* ---------------- PROJECTS ---------------- */
+    .experience-content ul {
+      padding-left: 18px;
+      color: var(--plum-soft);
+      font-size: 0.9rem;
+    }
+
+    .experience-content li + li {
+      margin-top: 6px;
+    }
 
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
     .project-card {
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 28px;
-      min-height: 300px;
+      padding: 32px;
+      min-height: 310px;
       display: flex;
       flex-direction: column;
     }
 
     .project-number {
       color: var(--mauve);
-      font-size: 0.76rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      margin-bottom: 40px;
+      letter-spacing: 1px;
+      margin-bottom: 28px;
     }
 
     .project-card h3 {
       font-family: "Playfair Display", serif;
       font-size: 1.45rem;
-      font-weight: 500;
-      line-height: 1.25;
-      margin-bottom: 13px;
+      line-height: 1.35;
+      margin-bottom: 15px;
     }
 
     .project-card p {
-      color: var(--muted);
+      color: var(--plum-soft);
       font-size: 0.88rem;
-      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .project-tools {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      border: 1px solid var(--border);
+      padding: 5px 9px;
+      font-size: 0.68rem;
+      color: var(--muted);
+      background: var(--cream);
     }
 
     .project-link {
-      display: inline-block;
-      margin-top: 22px;
+      margin-top: 18px;
       color: var(--mauve);
-      font-size: 0.84rem;
+      font-size: 0.8rem;
       font-weight: 700;
     }
-
-    .project-note {
-      display: inline-block;
-      margin-top: 22px;
-      color: var(--muted);
-      font-size: 0.78rem;
-    }
-
-    /* ---------------- SKILLS ---------------- */
 
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 22px;
     }
 
     .skill-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      padding: 28px;
+      border-top: 2px solid var(--blush);
+      padding-top: 24px;
     }
 
     .skill-card h3 {
       font-family: "Playfair Display", serif;
       font-size: 1.35rem;
-      font-weight: 500;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
-    .skill-card ul {
-      list-style: none;
-    }
-
-    .skill-card li {
+    .skill-card p {
       color: var(--plum-soft);
-      font-size: 0.88rem;
-      padding: 7px 0;
-      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
     }
-
-    .skill-card li:last-child {
-      border-bottom: none;
-    }
-
-    /* ---------------- CREDENTIALS ---------------- */
 
     .credentials-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
     }
 
     .cert-card {
-      display: block;
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 23px 25px;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      padding: 25px;
+      min-height: 175px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: block;
     }
 
     .cert-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--blush);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px rgba(52, 36, 47, 0.06);
     }
 
     .cert-provider {
       color: var(--mauve);
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 1.4px;
       font-weight: 700;
-      margin-bottom: 7px;
+      margin-bottom: 13px;
     }
 
-    .cert-name {
-      font-size: 0.94rem;
-      font-weight: 600;
-      line-height: 1.45;
-    }
-
-    .cert-arrow {
-      color: var(--mauve);
-      float: right;
+    .cert-card h3 {
       font-size: 1rem;
+      line-height: 1.45;
+      margin-bottom: 10px;
     }
 
-    .cert-card.no-link {
-      cursor: default;
+    .cert-card p {
+      color: var(--muted);
+      font-size: 0.78rem;
     }
-
-    /* ---------------- EDUCATION ---------------- */
 
     .education-card {
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 34px;
+      padding: 45px;
     }
 
-    .education-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 25px;
-      align-items: flex-start;
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+
+    .education-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+
+    .education-institution {
+      color: var(--mauve);
+      font-weight: 600;
       margin-bottom: 20px;
     }
 
-    .education-school {
-      font-family: "Playfair Display", serif;
-      font-size: 1.65rem;
-      font-weight: 500;
-    }
-
-    .education-date {
-      color: var(--mauve);
-      font-size: 0.82rem;
-      text-align: right;
-      white-space: nowrap;
-    }
-
-    .education-degree {
+    .education-card p {
       color: var(--plum-soft);
-      margin-bottom: 5px;
-    }
-
-    .education-class {
-      color: var(--muted);
-      font-size: 0.88rem;
+      font-size: 0.9rem;
     }
 
     .course-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 25px;
+      margin-top: 18px;
     }
 
-    .course-tag {
-      border: 1px solid var(--border);
-      padding: 6px 11px;
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 0.76rem;
+    .contact {
+      text-align: center;
+      padding: 110px 0;
     }
 
-    /* ---------------- CONTACT ---------------- */
-
-    .contact-section {
-      background: var(--cream-dark);
+    .contact h2 {
+      margin-bottom: 18px;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 70px;
-      align-items: start;
-    }
-
-    .contact-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.5rem, 5vw, 4.2rem);
-      line-height: 1;
-      font-weight: 500;
-    }
-
-    .contact-copy {
+    .contact-lede {
+      max-width: 700px;
+      margin: 0 auto 35px;
       color: var(--plum-soft);
-      max-width: 650px;
-      margin-bottom: 25px;
+      font-size: 0.98rem;
     }
 
-    .social-links {
+    .contact-links {
       display: flex;
+      justify-content: center;
+      gap: 12px;
       flex-wrap: wrap;
-      gap: 10px;
     }
 
-    .social-link {
+    .contact-link {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       border: 1px solid var(--border);
       background: var(--white);
-      padding: 10px 15px;
-      border-radius: 999px;
+      padding: 11px 17px;
       font-size: 0.82rem;
-      transition: border-color 0.2s ease, transform 0.2s ease;
+      transition: 0.2s ease;
     }
 
-    .social-link:hover {
-      border-color: var(--mauve);
-      transform: translateY(-1px);
+    .contact-link:hover {
+      border-color: var(--blush);
+      transform: translateY(-2px);
     }
 
-    .social-link svg {
-      width: 16px;
-      height: 16px;
-      fill: currentColor;
+    .contact-link svg {
+      width: 17px;
+      height: 17px;
     }
-
-    /* ---------------- FOOTER ---------------- */
 
     footer {
       border-top: 1px solid var(--border);
-      background: var(--cream);
+      padding: 25px 0;
+      color: var(--muted);
+      font-size: 0.78rem;
     }
 
     .footer-inner {
-      min-height: 70px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 12px;
-      color: var(--muted);
-      font-size: 0.78rem;
-      text-align: center;
+      gap: 10px;
     }
 
-    .footer-inner a {
-      color: var(--plum);
-      font-weight: 600;
+    footer a {
+      color: var(--mauve);
     }
-
-    /* ---------------- RESPONSIVE ---------------- */
 
     @media (max-width: 900px) {
-
       .nav-links {
         display: none;
       }
 
       .hero-grid,
-      .about-grid,
-      .contact-grid {
+      .about-grid {
         grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 70px;
-      }
-
-      .profile-card {
-        max-width: 650px;
+        gap: 45px;
       }
 
       .projects-grid,
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-
+      .skills-grid,
       .credentials-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .experience-item {
         grid-template-columns: 1fr;
-        gap: 10px;
-      }
-
-      .education-top {
-        flex-direction: column;
-      }
-
-      .education-date {
-        text-align: left;
+        gap: 12px;
       }
     }
 
     @media (max-width: 600px) {
-
-      .wrap {
-        width: min(100% - 30px, 1120px);
-      }
-
       .hero {
-        padding: 60px 0;
+        padding: 75px 0;
       }
 
       section {
-        padding: 65px 0;
+        padding: 70px 0;
       }
 
-      h1 {
-        font-size: 3.5rem;
+      .projects-grid,
+      .skills-grid,
+      .credentials-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
       }
 
-      .nav-cv {
-        display: none;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .button {
-        width: 100%;
-      }
-
-      .profile-card,
-      .project-card,
-      .skill-card,
       .education-card {
-        padding: 23px;
+        padding: 30px;
+      }
+
+      .profile-card {
+        padding: 25px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
       .footer-inner {
-        flex-wrap: wrap;
-        padding: 18px 0;
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
@@ -714,16 +593,13 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
 
 <body>
 
-  <!-- NAVIGATION -->
-
   <nav>
     <div class="wrap nav-inner">
+      <a href="#" class="logo">
+        Harriet <span>Kyalo</span>
+      </a>
 
 ```
-  <a href="#" class="logo">
-    Harriet <span>Kyalo</span>
-  </a>
-
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -734,595 +610,478 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
   </ul>
 
   <a href="#" class="nav-cv">View CV</a>
-
 </div>
 ```
 
   </nav>
 
-  <!-- HERO -->
-
-  <header class="hero">
-    <div class="wrap hero-grid">
+  <main>
 
 ```
-  <div>
-
-    <div class="hero-kicker">
-      IT & Technology · Cybersecurity · Systems & Security
-    </div>
-
-    <h1>
-      Harriet <span>Kyalo</span>
-    </h1>
-
-    <p class="hero-lede">
-      I bring hands-on experience across IT support, systems administration
-      and cybersecurity, with a practical approach to understanding systems,
-      troubleshooting problems and applying security principles.
-    </p>
-
-    <p class="hero-education">
-      BSc Computer Science coursework completed · Upper Second Class ·
-      Graduating October 2026
-    </p>
-
-    <div class="hero-actions">
-      <a href="#projects" class="button button-primary">
-        Explore My Work
-      </a>
-
-      <a href="#" class="button button-secondary">
-        View CV
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/h-kyalo"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="button button-secondary"
-      >
-        LinkedIn
-      </a>
-    </div>
-
-  </div>
-
-
-  <aside class="profile-card">
-
-    <h2>A little about my direction</h2>
-
-    <div class="profile-item">
-      <div class="profile-label">Background</div>
-      <div class="profile-text">
-        IT & Systems — Hands-on experience through ICT industrial
-        attachments.
-      </div>
-    </div>
-
-    <div class="profile-item">
-      <div class="profile-label">Areas I'm building in</div>
-      <div class="profile-text">
-        Cybersecurity & Systems Security — Investigation, security
-        fundamentals and practical environments.
-      </div>
-    </div>
-
-    <div class="profile-item">
-      <div class="profile-label">Approach</div>
-      <div class="profile-text">
-        Practical & Analytical — Understand the system first, then
-        troubleshoot or secure it.
-      </div>
-    </div>
-
-  </aside>
-
-</div>
-```
-
-  </header>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-    <div class="wrap">
-
-```
-  <div class="section-heading">
-    <div class="section-number">01 · ABOUT</div>
-    <h2 class="section-title">A practical foundation in technology.</h2>
-  </div>
-
-  <div class="about-grid">
+<section class="hero">
+  <div class="wrap hero-grid">
 
     <div>
-      <div class="about-label">
-        Background
+      <div class="hero-kicker">
+        IT & Technology · Cybersecurity · Systems & Security
+      </div>
+
+      <h1>
+        Harriet <span>Kyalo</span>
+      </h1>
+
+      <p class="hero-lede">
+        I bring hands-on experience across IT support, systems administration
+        and cybersecurity, with a practical approach to understanding systems,
+        troubleshooting problems and applying security principles.
+      </p>
+
+      <p class="hero-education">
+        BSc Computer Science coursework completed · Upper Second Class ·
+        Graduating October 2026
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="button primary">Explore My Work</a>
+        <a href="#" class="button secondary">View CV</a>
+        <a href="https://www.linkedin.com/in/h-kyalo/" target="_blank" rel="noopener noreferrer" class="button secondary">LinkedIn</a>
       </div>
     </div>
 
-    <div class="about-content">
+    <div class="profile-card">
+      <h3>A little about my direction</h3>
 
-      <p>
-        I'm a BSc Computer Science student with coursework completed,
-        awaiting graduation in October 2026, with an Upper Second Class
-        classification.
-      </p>
+      <div class="profile-item">
+        <div class="profile-label">Background</div>
+        <div class="profile-value">
+          IT & Systems — Hands-on experience through ICT industrial attachments
+        </div>
+      </div>
 
-      <p>
-        My practical experience has developed through ICT industrial
-        attachments, where I gained exposure to IT support, systems
-        administration, Active Directory, Windows Server, VMware,
-        networking environments and security controls.
-      </p>
+      <div class="profile-item">
+        <div class="profile-label">Areas I'm building in</div>
+        <div class="profile-value">
+          Cybersecurity & Systems Security — Investigation, security fundamentals and practical environments
+        </div>
+      </div>
 
-      <p>
-        I'm continuing to strengthen this foundation through cybersecurity
-        projects and professional learning, with a particular interest in
-        understanding how systems work, identifying problems and applying
-        practical security principles.
-      </p>
-
+      <div class="profile-item">
+        <div class="profile-label">Approach</div>
+        <div class="profile-value">
+          Practical & Analytical — Understand the system first, then troubleshoot or secure it
+        </div>
+      </div>
     </div>
 
   </div>
+</section>
 
-</div>
-```
+<section id="about">
+  <div class="wrap">
 
-  </section>
+    <div class="section-heading">
+      <div class="section-number">01 · ABOUT</div>
+      <h2>A practical foundation<br>in technology.</h2>
+    </div>
 
-  <!-- EXPERIENCE -->
+    <div class="about-grid">
 
-  <section id="experience">
-    <div class="wrap">
-
-```
-  <div class="section-heading">
-    <div class="section-number">02 · EXPERIENCE</div>
-    <h2 class="section-title">Hands-on experience.</h2>
-  </div>
-
-  <div class="experience-list">
-
-    <article class="experience-item">
-
-      <div class="experience-date">
-        May — July 2025
+      <div class="about-intro">
+        I'm a BSc Computer Science student with coursework completed, awaiting graduation in October 2026, with an Upper Second Class classification.
       </div>
 
-      <div>
-
-        <div class="experience-role">
-          ICT Industrial Attachment
-        </div>
-
-        <div class="experience-org">
-          Council of Legal Education (CLE)
-        </div>
-
-        <p class="experience-description">
-          Supported IT and systems activities including Active Directory
-          account provisioning, domain joining of laptops, Windows Server
-          testing, VMware environments, DNS using FreeBSD Unbound,
-          pfSense VLAN configuration, NPS/RADIUS authentication,
-          DSpace administration and security-related troubleshooting.
+      <div class="about-text">
+        <p>
+          My hands-on experience includes IT support, systems administration,
+          Active Directory, Windows Server, VMware, networking and security
+          controls gained through ICT industrial attachments.
         </p>
 
+        <p>
+          I'm continuing to strengthen this foundation through cybersecurity
+          projects and professional learning, with an interest in practical,
+          structured problem-solving across technology and security environments.
+        </p>
       </div>
 
-    </article>
+    </div>
+  </div>
+</section>
 
+<section id="experience">
+  <div class="wrap">
 
-    <article class="experience-item">
+    <div class="section-heading">
+      <div class="section-number">02 · EXPERIENCE</div>
+      <h2>Hands-on experience.</h2>
+    </div>
 
-      <div class="experience-date">
-        July — September 2024
+    <div class="timeline">
+
+      <div class="experience-item">
+        <div class="experience-date">
+          May — July 2025
+        </div>
+
+        <div class="experience-content">
+          <h3>ICT Industrial Attachment</h3>
+          <div class="experience-company">
+            Council of Legal Education (CLE)
+          </div>
+
+          <p>
+            Practical exposure across IT support, systems administration,
+            infrastructure and security environments.
+          </p>
+
+          <ul>
+            <li>Active Directory account provisioning and management, including domain joining 10 laptops.</li>
+            <li>Windows Server testing, VMware environments and systems administration tasks.</li>
+            <li>pfSense VLAN configuration across LAN, Wi-Fi, Voice, CCTV and Management segments.</li>
+            <li>RADIUS/NPS authentication and FreeBSD Unbound DNS configuration.</li>
+            <li>Exposure to DSpace, security event logging and day-to-day technical support.</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-
-        <div class="experience-role">
-          ICT Industrial Attachment
+      <div class="experience-item">
+        <div class="experience-date">
+          July — September 2024
         </div>
 
-        <div class="experience-org">
-          Kenya National Bureau of Statistics (KNBS)
-        </div>
+        <div class="experience-content">
+          <h3>ICT Industrial Attachment</h3>
+          <div class="experience-company">
+            Kenya National Bureau of Statistics (KNBS)
+          </div>
 
-        <p class="experience-description">
-          Provided ICT support across more than 50 systems, assisted with
-          hardware and software upgrades, supported users and onboarding,
-          worked with large volumes of census records and contributed to
-          ICT activities supporting the MSIP survey.
+          <p>
+            Supported users and systems within a large organisational
+            technology environment.
+          </p>
+
+          <ul>
+            <li>Provided technical support across 50+ systems, with issues addressed within established support timelines.</li>
+            <li>Supported system upgrades, troubleshooting and user onboarding.</li>
+            <li>Worked with 1,000+ census records within an operational ICT environment.</li>
+            <li>Supported the MSIP survey involving 55 industries and a 98% response rate.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <div class="section-number">03 · PROJECTS</div>
+      <h2>Practical work & investigations.</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-number">01</div>
+
+        <h3>Phishing Email Investigation & Incident Triage</h3>
+
+        <p>
+          Investigated a simulated password-expiration phishing email by
+          analysing email authentication results, sender infrastructure,
+          URLs and reputation indicators.
         </p>
 
+        <div class="project-tools">
+          <span class="tag">MXToolbox</span>
+          <span class="tag">VirusTotal</span>
+          <span class="tag">URLScan</span>
+          <span class="tag">Incident Triage</span>
+        </div>
+
+        <a
+          href="https://github.com/HKyalo/Phishing-Email-Investigation"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link"
+        >
+          View investigation on GitHub →
+        </a>
       </div>
 
-    </article>
+      <div class="project-card">
+        <div class="project-number">02</div>
 
+        <h3>Active Directory & Windows Server Environment</h3>
+
+        <p>
+          Practical attachment experience involving Active Directory,
+          domain joining, account provisioning, Windows Server testing
+          and virtualised environments.
+        </p>
+
+        <div class="project-tools">
+          <span class="tag">Active Directory</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">VMware</span>
+          <span class="tag">Group Policy</span>
+        </div>
+
+        <div class="project-link">
+          Part of my ICT attachment experience
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+
+        <h3>Network Segmentation & Firewall Configuration</h3>
+
+        <p>
+          Practical exposure to pfSense and VLAN segmentation across
+          LAN, Wi-Fi, Voice, CCTV and Management network environments.
+        </p>
+
+        <div class="project-tools">
+          <span class="tag">pfSense</span>
+          <span class="tag">VLANs</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Security Controls</span>
+        </div>
+
+        <div class="project-link">
+          Part of my ICT attachment experience
+        </div>
+      </div>
+
+    </div>
   </div>
+</section>
 
-</div>
-```
+<section id="skills">
+  <div class="wrap">
 
-  </section>
+    <div class="section-heading">
+      <div class="section-number">04 · SKILLS</div>
+      <h2>What I work with.</h2>
+    </div>
 
-  <!-- PROJECTS -->
+    <div class="skills-grid">
 
-  <section id="projects">
-    <div class="wrap">
+      <div class="skill-card">
+        <h3>IT & Support</h3>
+        <p>
+          Technical support, troubleshooting, user onboarding,
+          system configuration, hardware/software support and
+          documentation.
+        </p>
+      </div>
 
-```
-  <div class="section-heading">
-    <div class="section-number">03 · PROJECTS</div>
-    <h2 class="section-title">Selected practical work.</h2>
-    <p class="section-intro">
-      A combination of independent cybersecurity work and practical
-      environments encountered during my ICT experience.
-    </p>
+      <div class="skill-card">
+        <h3>Systems</h3>
+        <p>
+          Active Directory, Windows Server, Group Policy, VMware,
+          DNS, RADIUS/NPS and systems administration fundamentals.
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Security & Infrastructure</h3>
+        <p>
+          Cybersecurity fundamentals, phishing investigation,
+          security event logging, VLANs, pfSense, authentication
+          controls and security-focused troubleshooting.
+        </p>
+      </div>
+
+    </div>
   </div>
+</section>
 
+<section id="certifications">
+  <div class="wrap">
 
-  <div class="projects-grid">
+    <div class="section-heading">
+      <div class="section-number">05 · CREDENTIALS</div>
+      <h2>Professional learning.</h2>
+    </div>
 
-    <article class="project-card">
-
-      <div class="project-number">01</div>
-
-      <h3>
-        Phishing Email Investigation & Incident Triage
-      </h3>
-
-      <p>
-        Investigated a simulated enterprise phishing email using email
-        header analysis, SPF/DKIM/DMARC checks, VirusTotal and URLScan.io
-        to identify indicators and document the findings.
-      </p>
+    <div class="credentials-grid">
 
       <a
-        href="https://github.com/HKyalo/Phishing-Email-Investigation"
+        href="https://www.credly.com/badges/1187e45f-9e70-4cea-bacd-905f953a3500/public_url"
         target="_blank"
         rel="noopener noreferrer"
-        class="project-link"
+        class="cert-card"
       >
-        View on GitHub →
+        <div class="cert-provider">Cisco Networking Academy</div>
+        <h3>Cybersecurity Defense Analyst Career Path</h3>
+        <p>View credential on Credly →</p>
       </a>
 
-    </article>
-
-
-    <article class="project-card">
-
-      <div class="project-number">02</div>
-
-      <h3>
-        Active Directory & Windows Server Environment
-      </h3>
-
-      <p>
-        Practical exposure to Active Directory account provisioning,
-        domain joining, Windows Server testing and user/system
-        administration during ICT attachment.
-      </p>
-
-      <span class="project-note">
-        Part of my ICT attachment experience
-      </span>
-
-    </article>
-
-
-    <article class="project-card">
-
-      <div class="project-number">03</div>
-
-      <h3>
-        Network Segmentation & Firewall Configuration
-      </h3>
-
-      <p>
-        Practical exposure to pfSense VLAN configuration across LAN,
-        Wi-Fi, Voice, CCTV and Management environments, together with
-        NPS/RADIUS and related infrastructure controls.
-      </p>
-
-      <span class="project-note">
-        Part of my ICT attachment experience
-      </span>
-
-    </article>
-
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- SKILLS -->
-
-  <section id="skills">
-    <div class="wrap">
-
-```
-  <div class="section-heading">
-    <div class="section-number">04 · SKILLS</div>
-    <h2 class="section-title">What I work with.</h2>
-  </div>
-
-
-  <div class="skills-grid">
-
-    <article class="skill-card">
-
-      <h3>IT & Support</h3>
-
-      <ul>
-        <li>IT troubleshooting</li>
-        <li>User support & onboarding</li>
-        <li>Hardware & software support</li>
-        <li>System configuration</li>
-        <li>Technical documentation</li>
-      </ul>
-
-    </article>
-
-
-    <article class="skill-card">
-
-      <h3>Systems</h3>
-
-      <ul>
-        <li>Active Directory</li>
-        <li>Windows Server</li>
-        <li>Group Policy</li>
-        <li>VMware</li>
-        <li>DNS & authentication</li>
-      </ul>
-
-    </article>
-
-
-    <article class="skill-card">
-
-      <h3>Security & Infrastructure</h3>
-
-      <ul>
-        <li>Cybersecurity fundamentals</li>
-        <li>Security event logging</li>
-        <li>Phishing investigation</li>
-        <li>pfSense & VLANs</li>
-        <li>NPS / RADIUS</li>
-      </ul>
-
-    </article>
-
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- CREDENTIALS -->
-
-  <section id="certifications">
-    <div class="wrap">
-
-```
-  <div class="section-heading">
-    <div class="section-number">05 · CREDENTIALS</div>
-    <h2 class="section-title">Professional learning.</h2>
-  </div>
-
-
-  <div class="credentials-grid">
-
-    <a
-      href="https://www.credly.com/badges/1187e45f-9e70-4cea-bacd-905f953a3500/public_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="cert-card"
-    >
-      <div class="cert-provider">Cisco Networking Academy</div>
-      <div class="cert-name">
-        Cybersecurity Defense Analyst Career Path
-        <span class="cert-arrow">↗</span>
-      </div>
-    </a>
-
-
-    <a
-      href="https://www.credly.com/badges/f523ff37-d75a-4eda-b3d9-aff2ab7c4e12/public_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="cert-card"
-    >
-      <div class="cert-provider">ISC2</div>
-      <div class="cert-name">
-        Certified in Cybersecurity (CC)
-        <span class="cert-arrow">↗</span>
-      </div>
-    </a>
-
-
-    <a
-      href="https://www.credly.com/badges/c447c54d-290c-442a-814e-58d260d028f4/public_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="cert-card"
-    >
-      <div class="cert-provider">Microsoft</div>
-      <div class="cert-name">
-        AI Skills Fest 2026
-        <span class="cert-arrow">↗</span>
-      </div>
-    </a>
-
-
-    <a
-      href="https://www.credly.com/badges/95260ee9-1aac-4a78-a91f-6d2f891f95b2/public_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="cert-card"
-    >
-      <div class="cert-provider">IBM SkillsBuild</div>
-      <div class="cert-name">
-        Cybersecurity Fundamentals
-        <span class="cert-arrow">↗</span>
-      </div>
-    </a>
-
-
-    <a
-      href="https://www.credly.com/badges/cd3f279b-f05c-47a0-a994-99a6762425d1/public_url"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="cert-card"
-    >
-      <div class="cert-provider">IBM SkillsBuild</div>
-      <div class="cert-name">
-        Working in a Digital World
-        <span class="cert-arrow">↗</span>
-      </div>
-    </a>
-
-
-    <div class="cert-card no-link">
-
-      <div class="cert-provider">
-        AFRALTI · CUEA
-      </div>
-
-      <div class="cert-name">
-        IBM SkillsBuild for Students Kenya Program —
-        Cyber Security, Blockchain, Data Science, Cloud Computing,
-        Artificial Intelligence & Professional Skills
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- EDUCATION -->
-
-  <section id="education">
-    <div class="wrap">
-
-```
-  <div class="section-heading">
-    <div class="section-number">06 · EDUCATION</div>
-    <h2 class="section-title">Academic foundation.</h2>
-  </div>
-
-
-  <div class="education-card">
-
-    <div class="education-top">
-
-      <div class="education-school">
-        The Catholic University of Eastern Africa
-      </div>
-
-      <div class="education-date">
-        Graduation · October 2026
-      </div>
-
-    </div>
-
-    <div class="education-degree">
-      BSc Computer Science
-    </div>
-
-    <div class="education-class">
-      Upper Second Class · Coursework Completed
-    </div>
-
-
-    <div class="course-tags">
-      <span class="course-tag">Computer Science</span>
-      <span class="course-tag">Cybersecurity</span>
-      <span class="course-tag">Systems</span>
-      <span class="course-tag">Databases</span>
-      <span class="course-tag">Networking</span>
-      <span class="course-tag">Software Development</span>
-    </div>
-
-  </div>
-
-</div>
-```
-
-  </section>
-
-  <!-- CONTACT -->
-
-  <section class="contact-section">
-    <div class="wrap contact-grid">
-
-```
-  <div>
-    <h2 class="contact-title">
-      Let's connect.
-    </h2>
-  </div>
-
-
-  <div>
-
-    <p class="contact-copy">
-      I bring practical experience across IT support, systems
-      administration and cybersecurity, together with a structured,
-      analytical approach to solving technical and operational problems.
-      I'm continuing to strengthen my skills through hands-on projects
-      and professional learning, while looking for opportunities where I
-      can contribute, take responsibility and grow within a
-      technology-focused team.
-    </p>
-
-
-    <div class="social-links">
-
       <a
-        href="https://www.linkedin.com/in/h-kyalo"
+        href="https://www.credly.com/badges/f523ff37-d75a-4eda-b3d9-aff2ab7c4e12/public_url"
         target="_blank"
         rel="noopener noreferrer"
-        class="social-link"
+        class="cert-card"
       >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20.45 20.45h-3.56v-5.58c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.94v5.68H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
+        <div class="cert-provider">(ISC)²</div>
+        <h3>Certified in Cybersecurity (CC)</h3>
+        <p>View credential on Credly →</p>
+      </a>
+
+      <a
+        href="https://www.credly.com/badges/c447c54d-290c-442a-814e-58d260d028f4/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-card"
+      >
+        <div class="cert-provider">Microsoft</div>
+        <h3>AI Skills Fest 2026</h3>
+        <p>View credential on Credly →</p>
+      </a>
+
+      <a
+        href="https://www.credly.com/badges/95260ee9-1aac-4a78-a91f-6d2f891f95b2/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-card"
+      >
+        <div class="cert-provider">IBM SkillsBuild</div>
+        <h3>Cybersecurity Fundamentals</h3>
+        <p>View credential on Credly →</p>
+      </a>
+
+      <a
+        href="https://www.credly.com/badges/cd3f279b-f05c-47a0-a994-99a6762425d1/public_url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cert-card"
+      >
+        <div class="cert-provider">IBM SkillsBuild</div>
+        <h3>Working in a Digital World</h3>
+        <p>View credential on Credly →</p>
+      </a>
+
+      <div class="cert-card">
+        <div class="cert-provider">AFRALTI · CUEA</div>
+        <h3>
+          IBM SkillsBuild for Students Kenya Program
+        </h3>
+        <p>
+          Basics in Cyber Security, Blockchain, Data Science,
+          Cloud Computing, Artificial Intelligence & Professional Skills
+          · Aug–Sept 2023
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+
+    <div class="section-heading">
+      <div class="section-number">06 · EDUCATION</div>
+      <h2>Academic foundation.</h2>
+    </div>
+
+    <div class="education-card">
+
+      <div class="education-grid">
+
+        <div>
+          <h3>BSc Computer Science</h3>
+
+          <div class="education-institution">
+            The Catholic University of Eastern Africa (CUEA)
+          </div>
+
+          <p>
+            Upper Second Class classification.<br>
+            Coursework completed.<br>
+            Graduation: October 2026.
+          </p>
+        </div>
+
+        <div>
+          <p>
+            Academic foundation across computing, systems,
+            cybersecurity, databases, networking and software
+            development.
+          </p>
+
+          <div class="course-tags">
+            <span class="tag">Computer Science</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Systems</span>
+            <span class="tag">Databases</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Programming</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+
+    <div class="section-number">07 · CONNECT</div>
+
+    <h2>Let's connect.</h2>
+
+    <p class="contact-lede">
+      I bring practical experience across IT support, systems administration
+      and cybersecurity, together with a structured, analytical approach to
+      solving technical and operational problems. I'm continuing to
+      strengthen my skills through hands-on projects and professional
+      learning, while looking for opportunities where I can contribute,
+      take responsibility and grow within a technology-focused team.
+    </p>
+
+    <div class="contact-links">
+
+      <a
+        href="https://www.linkedin.com/in/h-kyalo/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-link"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
         </svg>
         LinkedIn
       </a>
-
 
       <a
         href="mailto:harrietkyalo22@gmail.com"
-        class="social-link"
+        class="contact-link"
       >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="3" y="5" width="18" height="14" rx="2"/>
+          <path d="m3 7 9 6 9-6"/>
         </svg>
         Email
       </a>
-
 
       <a
         href="https://github.com/HKyalo"
         target="_blank"
         rel="noopener noreferrer"
-        class="social-link"
+        class="contact-link"
       >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.84 2.8 1.31 3.48 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.77.84 1.23 1.91 1.23 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M15 22v-4c.05-1.25-.45-2.15-1.5-3 4.5-.5 6.5-2.2 6.5-6a4.7 4.7 0 0 0-1.25-3.3A4.4 4.4 0 0 0 18.65 2s-1.1-.35-3.6 1.35a12.2 12.2 0 0 0-6.1 0C6.45 1.65 5.35 2 5.35 2a4.4 4.4 0 0 0-.1 3.7A4.7 4.7 0 0 0 4 9c0 3.8 2 5.5 6.5 6-1.05.85-1.55 1.75-1.5 3v4"/>
+          <path d="M8 18c-3 .9-3-1.4-4.2-1.8"/>
         </svg>
         GitHub
       </a>
@@ -1330,13 +1089,10 @@ content="Harriet Kyalo — IT & Technology, Cybersecurity, and Systems & Securit
     </div>
 
   </div>
-
-</div>
+</section>
 ```
 
-  </section>
-
-  <!-- FOOTER -->
+  </main>
 
   <footer>
     <div class="wrap footer-inner">
