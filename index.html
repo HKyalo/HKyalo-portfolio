@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Harriet Kyalo | IT & Cybersecurity</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +21,8 @@
       --border: #e4d9d1;
       --shadow-sm: 0 2px 8px rgba(52, 36, 47, 0.03);
       --shadow-md: 0 8px 20px -8px rgba(52, 36, 47, 0.08);
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -43,7 +45,7 @@
     /* ---------- NAV ---------- */
     nav {
       position: sticky;
-      top: 0;
+      top: env(safe-area-inset-top, 0px);
       z-index: 100;
       background: rgba(248, 243, 238, 0.94);
       backdrop-filter: blur(10px);
@@ -101,6 +103,13 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 60px;
+      align-items: start;
+    }
+
     h1 {
       font-family: "Playfair Display", serif;
       font-size: clamp(3.4rem, 8vw, 6rem);
@@ -142,11 +151,14 @@
       color: var(--muted);
     }
 
-    .hero-actions {
+    .hero-panel {
+      background: var(--cream-dark);
+      border: 1px solid var(--border);
+      padding: 28px;
+      margin-top: 8px;
       display: flex;
-      gap: 13px;
-      flex-wrap: wrap;
-      margin-top: 28px;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .btn {
@@ -158,6 +170,10 @@
       font-size: 0.87rem;
       font-weight: 600;
       transition: all 0.2s ease;
+    }
+
+    .hero-panel .btn {
+      width: 100%;
     }
 
     .btn-primary {
@@ -219,7 +235,7 @@
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 60px;
-      align-items: start;
+      align-items: center;
     }
 
     .about-main {
@@ -538,6 +554,7 @@
       color: #cbbdc5;
       border-top: 1px solid rgba(255,255,255,0.08);
       padding: 20px 0;
+      padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
       font-size: 0.78rem;
     }
 
@@ -554,6 +571,10 @@
     @media (max-width: 900px) {
       .nav-links a:not(.nav-cv) { display: none; }
 
+      .hero-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-panel { flex-direction: row; flex-wrap: wrap; }
+      .hero-panel .btn { width: auto; flex: 1 1 auto; }
+
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
 
       .projects-grid,
@@ -569,6 +590,9 @@
     @media (max-width: 600px) {
       h1 { font-size: 3.2rem; }
       section { padding: 56px 0; }
+
+      .hero-panel { flex-direction: column; }
+      .hero-panel .btn { width: 100%; }
 
       .experience-item {
         grid-template-columns: 1fr;
@@ -617,27 +641,29 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="container">
-        <h1>Harriet <span>Kyalo</span></h1>
+      <div class="container hero-grid">
+        <div>
+          <h1>Harriet <span>Kyalo</span></h1>
 
-        <div class="hero-descriptor">
-          IT & Technology · Cybersecurity · Systems & Security
+          <div class="hero-descriptor">
+            IT & Technology · Cybersecurity · Systems & Security
+          </div>
+
+          <p class="hero-statement">
+            Building practical experience across IT, systems and cybersecurity.
+          </p>
+
+          <p class="hero-intro">
+            BSc Computer Science coursework completed, with hands-on experience in
+            IT support, systems administration, infrastructure and security-focused work.
+          </p>
+
+          <p class="hero-meta">
+            BSc Computer Science coursework completed · Upper Second Class · Graduation October 2026
+          </p>
         </div>
 
-        <p class="hero-statement">
-          Building practical experience across IT, systems and cybersecurity.
-        </p>
-
-        <p class="hero-intro">
-          BSc Computer Science coursework completed, with hands-on experience in
-          IT support, systems administration, infrastructure and security-focused work.
-        </p>
-
-        <p class="hero-meta">
-          BSc Computer Science coursework completed · Upper Second Class · Graduation October 2026
-        </p>
-
-        <div class="hero-actions">
+        <div class="hero-panel">
           <a href="#work" class="btn btn-primary">Explore My Work</a>
           <a href="#" class="btn btn-secondary">View CV</a>
           <a href="https://www.linkedin.com/in/h-kyalo" target="_blank" class="btn btn-secondary">LinkedIn</a>
